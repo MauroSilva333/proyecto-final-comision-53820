@@ -1,0 +1,299 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el h1 en todas las páginas */
+h1 {
+    color: white;
+    font-family: "Gowun Batang", serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Gowun Batang", serif;
+    display: inline-block;
+    font-size: 20px;
+}
+
+nav ul li a img {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #FFE4C9;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+.icon {
+    width: 30px; 
+    height: auto;
+}
+
+/* Estilos para las imágenes en el pie de página */
+footer a .correo {
+    max-width: 60px;
+    max-height: 40px;
+}
+
+footer a .instagram {
+    max-width: 90px;
+    max-height: 60px;
+}
+
+/* Estilos para la página de inicio */
+.index-body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/img/fondo/fondo-2.png');
+    background-size: cover;
+    background-position: center; /* 30% */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos específicos para la página de contacto */
+.contacto-body {
+    background-color: #FFE4C9; /* Esto establece el color de fondo */
+    color: black; /* Esto establece el color del texto */
+}
+
+.contact-info {
+    display: flex;
+}
+
+.logo-container {
+    margin-right: 100px; /* Ajusta el margen según tu diseño */
+}
+
+.right-logo {
+    float: right;
+    margin-left: 100px;
+}
+
+.mis-trabajos {
+    background-color: #FFE4C9;
+}
+
+.main-trabajos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.imagen-retratos {
+    max-width: 400px;
+}
+
+.imagen-musica {
+    max-width: 400px; 
+}
+
+.main-recursos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.imagen-presets {
+    max-width: 400px;
+}
+
+.imagen-cursos {
+    max-width: 400px; 
+}
+
+nav ul li {
+    display: inline;
+    text-align: center;
+    padding: 3rem;
+}
+
+.h1-index {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-family: "Gowun Batang", serif;
+    white-space: nowrap;
+}
+
+.grid-mi {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.img-mi {
+    width: 400px;
+    grid-column: 1/1;
+}
+
+.h1-mi {
+    grid-column: 2/2;
+}
+
+.p-mi {
+    grid-column: 3/3;
+    grid-row: 1 / span 2;
+}
+
+@media (max-width: 1024px) {
+    .index-body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Ajustes para pantallas de 768px */
+@media (max-width: 768px) {
+    .index-body {
+        background-size: cover;
+        background-position: center;
+    }
+    .h1-index {
+        left: 40%;
+        font-size: 100px ;
+    }
+    header {
+        margin-top: -10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 40px; 
+        padding: 5px 0; 
+    }
+
+    header, header nav {
+        background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del header */
+    }
+
+    header nav {
+        text-align: center; /* Centra horizontalmente los elementos de la barra de navegación */
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-around; /* Distribuye uniformemente los elementos de la barra de navegación */
+        align-items: center; /* Centra verticalmente los elementos de la barra de navegación */
+        list-style-type: none; /* Elimina los marcadores de lista */
+        padding: 0;
+    }
+
+    header nav ul li {
+        flex: 1; /* Hace que los elementos de la lista ocupen todo el ancho disponible */
+        text-align: center; /* Centra horizontalmente el texto */
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-family: "Gowun Batang", serif;
+        display: block; /* Muestra los enlaces como bloques para ocupar todo el ancho del contenedor */
+        font-size: 16px; /* Reduzca el tamaño de fuente */
+    }
+
+    nav ul li a img {
+        max-width: 80px; /* Reduzca el tamaño máximo de la imagen */
+        max-height: 40px;
+    }
+
+    /* Achicar imágenes de retratos y música */
+    .imagen-retratos,
+    .imagen-musica {
+        max-width: 200px; /* Reducción del ancho máximo */
+        height: auto; /* Mantener la proporción */
+        margin-top: 40%;
+    }
+
+    .main-trabajos p {
+        text-align: center; /* Centrar el texto */
+    }
+}
+
+/* Ajustes para pantallas de 425px */
+@media (max-width: 425px) {
+    .index-body {
+        background-size: cover;
+        background-position: center;
+    }
+    .h1-index {
+        left: 40%;
+        font-size: 100px ;
+    }
+    header {
+        margin-top: -10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 40px; 
+        padding: 5px 0; 
+    }
+
+    header, header nav {
+        background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del header */
+    }
+
+    header nav {
+        text-align: center; /* Centra horizontalmente los elementos de la barra de navegación */
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between; /* Distribuye uniformemente los elementos de la barra de navegación */
+        align-items: center; /* Centra verticalmente los elementos de la barra de navegación */
+        list-style-type: none; /* Elimina los marcadores de lista */
+        padding: 0;
+    }
+
+    header nav ul li {
+        flex: 1; /* Hace que los elementos de la lista ocupen todo el ancho disponible */
+        text-align: center; /* Centra horizontalmente el texto */
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-family: "Gowun Batang", serif;
+        display: block; /* Muestra los enlaces como bloques para ocupar todo el ancho del contenedor */
+        font-size: 10px; /* Reduzca el tamaño de fuente */
+    }
+
+    nav ul li a img {
+        max-width: 80px; /* Reduzca el tamaño máximo de la imagen */
+        max-height: 40px;
+    }
+
+    /* Achicar imágenes de retratos y música */
+    .imagen-retratos,
+    .imagen-musica {
+        max-width: 200px; /* Reducción del ancho máximo */
+        height: auto; /* Mantener la proporción */
+        margin-top: 40%;
+    }
+
+    .main-trabajos p {
+        text-align: center; /* Centrar el texto */
+    }
+}
+
+
