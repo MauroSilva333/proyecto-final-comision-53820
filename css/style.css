@@ -145,6 +145,8 @@ nav ul li {
 .grid-mi {
     display: grid;
     grid-template-columns: auto auto auto;
+    align-items: center;
+    margin-top: 5%;
 }
 
 .img-mi {
@@ -159,6 +161,10 @@ nav ul li {
 .p-mi {
     grid-column: 3/3;
     grid-row: 1 / span 2;
+}
+
+.main-contacto {
+    margin-top: 15%;
 }
 
 @media (max-width: 1024px) {
